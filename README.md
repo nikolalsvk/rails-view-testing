@@ -1,24 +1,21 @@
-# README
+# Rails View Testing example repo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+You probably came here from the Pragmatic Pineapple blog. If not, you can check out the post
+["Why Write Rails View Tests"](https://pragmaticpineapple.com/why-write-rails-view-tests/)
 
-Things you may want to cover:
+The idea here is to see different ways of how we can test a Rails view template.
 
-* Ruby version
+## Setup
 
-* System dependencies
+```bash
+$ bundle install
+$ bin/rails db:setup
+```
 
-* Configuration
+Then, you can run the RSpec test we edited in the blog post:
 
-* Database creation
+```bash
+$ bundle exec rspec spec/views/books/index.html.erb_spec.rb
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+That's it folks.
